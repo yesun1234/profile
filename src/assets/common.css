@@ -1,6 +1,7 @@
 /* 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Jua&display=swap');
 
 html,
 body,
@@ -89,12 +90,18 @@ video {
     font-size: 100%;
     font: inherit;
     /* vertical-align: baseline; */
+    color: #fff;
 }
 
 * {
     box-sizing: border-box;
 }
-
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -108,17 +115,24 @@ menu,
 nav,
 section {
     display: block;
+    letter-spacing: .9px;
+    word-spacing: -1.3px;
 }
+
 
 body {
     /* line-height: 1; */
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 500;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background-color);
+
 }
 
 a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 ol,
@@ -156,9 +170,41 @@ button {
 
 :root {
     --foreground-rgb: 255, 255, 255;
-    --background-rgb: 15, 24, 42;
+    --background-color: #1000ff;
     --color-primary: 0, 209, 125;
     --color-secondary: 203, 229, 0;
-    --color-point: rgba(0, 122, 255, 1) ;
+    --color-point: 43 244 13;
+    --color-point2:255, 0, 0;
+    --color-primary: 166 246 39;
+    --color-primary2: 255 225 35;
+    --color-primary3:255, 174, 174;
 }
-.color1{color:  var(--color-point)}
+.color1{color: rgba(var(--color-primary))} 
+.color2{color: rgba(var(--color-primary2))} 
+.color3{color: rgba(var(--color-primary3))} 
+/* .color3{color: rgb(var(--color-primary2) / 0.7);}  */
+
+.bg-pr {background-color: rgba(var(--color-primary));}
+.bg-pr1 {background-color: rgba(var(--color-primary));}
+.bg-pr2 {background-color: rgba(var(--color-primary2));}
+.bg-pr3 {background-color: rgba(var(--color-primary3));}
+
+
+.nav{display: flex;align-items: center;justify-content: center;position: sticky;top: 40px;z-index: 999;}
+.nav ul{background: rgba(128, 128, 128, 0.55);border-radius: 30px;padding: 0 14px;}
+.nav ul li{color: #fff;float: left;}
+.nav ul li a{padding: 13px 19px;display: inline-block;color: #fff;transition: all .3s;font-size: 20px;}
+.navCircle{display: inline-block;padding:10px;border-radius: 50%;vertical-align: middle;}
+.navCircle + .navCircle{margin-left: 3px;}
+.nav ul li a:hover{color: #f6f6f6e5;}
+
+.inner {
+    max-width: 1024px;
+    /* min-width: 24rem; */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.inner2{max-width: none;padding: 0 2.8rem;}
+
+
+.flex{display: flex;}

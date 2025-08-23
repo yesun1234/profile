@@ -19,13 +19,22 @@
     -webkit-text-stroke: 0;
   }
 }
-.st1{fill: #fff;}
-svg{stroke: #ffaeae;}
-svg circle:nth-child(1){fill: #ffaeae;}
-svg:nth-child(2){stroke: #ffaeae82;}
-svg:nth-child(2) circle:nth-child(1){fill: #ffaeae82;}
-svg:nth-child(3){stroke: #ffaeae4d;}
-svg:nth-child(3) circle:nth-child(1){fill: #ffaeae4d;}
+
+/*** sec01 ***/
+.sec01{text-align: center;}
+.top_txt{padding-top: 177px;display: flex;flex-direction: column;gap: 29px;align-items: center;margin-bottom: 40px;}
+.top_txt h1{font-size: 44px;font-weight: 800;line-height: 1.3;letter-spacing: 1.3px;}
+.top_txt p{font-size: 26px;}
+.sec01 button{font-weight: bold;background: rgba(128, 128, 128, 0.434);transition: all .3s;border-radius: 30px;padding: 13px 29px;color: #fff;font-size: 15px;}
+.sec01 button:hover{background: rgba(128, 128, 128, 0.55);}
+
+.main{padding: 6rem 0;}
+svg{stroke: rgba(var(--color-primary));}
+svg circle:nth-child(1){fill: rgba(var(--color-primary));}
+svg:nth-child(2){stroke: rgba(var(--color-primary2));}
+svg:nth-child(2) circle:nth-child(1){fill: rgba(var(--color-primary2))}
+svg:nth-child(3){stroke: rgba(var(--color-primary3))}
+svg:nth-child(3) circle:nth-child(1){fill: rgba(var(--color-primary3))}
 path{
   /* stroke: #ffaeae; */
     
@@ -38,5 +47,30 @@ path{
 }
 
 .top_logo{position: relative;}
+
+.sec02 .subNav{position: sticky;top: 0;left: 0;height: 100%;}
+.subNav a{font-size: 45px;font-weight: 700;display: inline-block;padding: 10px 0;}
+.subNav a.on{color: pink;}
+.subMain{padding: 10px;}
+
+
+/*** sec02 ***/
+.sec02{position: relative;}
+.sec02 .flex{gap: 80px;}
+
+/*** career ***/
+.career ul{display: grid;gap: 46px;}
+.career .careerDate{font-size: 21px;}
+.career .careerTxt{font-size: 40px;display: block;font-weight: 900;margin-top: 3px;}
+.carrerTxt_depth ul{padding-left: 30px;margin-top: 3px;}
+.career strong{font-weight: 600;font-size: 26px;}
+.career .carrerTxt_depth{gap: 14px;margin-top: 10px;}
+.career .carrerTxt_depth ul{gap: 5px;}
+.dot{position: relative;padding-left: 15px;font-size: 20px;}
+.dot::before{
+  content: "-";position: absolute;top: 0;left: 0;
+}
+.dot2{margin-top: 3px;display: inline-block;}
+.carrerTxt_depth.carrerTxt_depth2{gap: 7px;}
 
 

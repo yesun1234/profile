@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from "react";
+import { Element } from "react-scroll";
 import gsap from "gsap";
 
 const Section01 = () => {
-  // 개별 ref 선언
   const circleRef1 = useRef(null);
   const circleRef2 = useRef(null);
   const circleRef3 = useRef(null);
 
-  // 배열로 묶기 (렌더마다 새 배열이지만 ref 객체는 동일)
   const circleRefs = [circleRef1, circleRef2, circleRef3];
 
   useEffect(() => {
@@ -54,10 +53,11 @@ const Section01 = () => {
           path.setAttribute("stroke-width", "6");
           path.setAttribute("fill", "none");
           path.setAttribute("stroke-linecap", "round");
-          path.classList.add("letter-path", `letter-${i}`);
+          
         }
 
         svg.appendChild(path);
+        svg.classList.add("letter-path", `color-${i}`);
 
         const len = path.getTotalLength ? path.getTotalLength() : 2 * Math.PI * 20;
         path.style.strokeDasharray = len;
@@ -98,6 +98,7 @@ const Section01 = () => {
   }, []); // 여기서 circleRefs 안 넣어도 안전
 
   return (
+    <Element name='main'>
     <section className="sec01">
       <div className="inner">
         <div className="main">
@@ -115,13 +116,18 @@ const Section01 = () => {
               ))}
             </div>
 
-            <h1>
-              안녕하세요.<br /> 퍼블리셔 <span className="color1">안예선</span>입니다.
-            </h1>
+            <div className="top_txt">
+              <h1>
+                안녕하세요.<br />웹 퍼블리셔 <span className="color1">안예선</span>입니다.
+              </h1>
+              <p>웹표준, 웹접근성을 고려하며 안전하고 수준 높은 사이트를 만들며,<br /> 꾸준한 공부로 발전할 것입니다. </p>
+              <button type="button">이력서 다운받기</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 
