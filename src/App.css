@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -8,12 +5,38 @@
   }
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.st0 {
+  fill: #000;
+  animation: circle 5s ease-in-out  alternate;
+}
+@keyframes circle{
+  from{
+    fill: transparent;
+    -webkit-text-stroke: 1800;
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    fill: #000;
+    -webkit-text-stroke: 0;
   }
 }
+.st1{fill: #fff;}
+svg{stroke: #ffaeae;}
+svg circle:nth-child(1){fill: #ffaeae;}
+svg:nth-child(2){stroke: #ffaeae82;}
+svg:nth-child(2) circle:nth-child(1){fill: #ffaeae82;}
+svg:nth-child(3){stroke: #ffaeae4d;}
+svg:nth-child(3) circle:nth-child(1){fill: #ffaeae4d;}
+path{
+  /* stroke: #ffaeae; */
+    
+    stroke-width: 38;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    visibility: visible;
+    stroke-dashoffset: 0px;
+    
+}
+
+.top_logo{position: relative;}
+
+
