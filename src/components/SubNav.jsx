@@ -6,17 +6,17 @@ const SubNav = () => {
     <nav className='subNav'>
         <ul>
             <li>
-                <ScrollLink to='PROFILE' smooth={true} duration={500} className='color2'>
+                <ScrollLink to='PROFILE' smooth={true} duration={500} className='color2' activeClass='on' spy={true}>
                     PROFILE
                 </ScrollLink>
             </li>
             <li>
-                <ScrollLink to='CAREER' smooth={true} duration={500} className='color2'>
+                <ScrollLink to='CAREER' smooth={true} duration={500} className='color2' activeClass='on' spy={true}>
                     CAREER
                 </ScrollLink>
             </li>
             <li>
-                <ScrollLink to='EDUCATION' smooth={true} duration={500} className='color2'>
+                <ScrollLink to='EDUCATION' smooth={true} duration={500} className='color2' activeClass='on' spy={true}>
                     EDUCATION
                 </ScrollLink>
             </li>

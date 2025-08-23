@@ -167,6 +167,7 @@ button {
     color: #000;
     cursor: pointer;
 }
+img{width: 100%;}
 
 :root {
     --foreground-rgb: 255, 255, 255;
@@ -177,7 +178,7 @@ button {
     --color-point2:255, 0, 0;
     --color-primary: 166 246 39;
     --color-primary2: 255 225 35;
-    --color-primary3:255, 174, 174;
+    --color-primary3: 255 85 85;
 }
 .color1{color: rgba(var(--color-primary))} 
 .color2{color: rgba(var(--color-primary2))} 
@@ -185,6 +186,7 @@ button {
 /* .color3{color: rgb(var(--color-primary2) / 0.7);}  */
 
 .bg-pr {background-color: rgba(var(--color-primary));}
+/* #8100ff */
 .bg-pr1 {background-color: rgba(var(--color-primary));}
 .bg-pr2 {background-color: rgba(var(--color-primary2));}
 .bg-pr3 {background-color: rgba(var(--color-primary3));}
@@ -204,7 +206,7 @@ button {
     margin: 0 auto;
     padding: 0 2rem;
 }
-.inner2{max-width: none;padding: 0 2.8rem;}
+.inner2{max-width: none;padding: 0 2.8rem;min-width: 1450px;max-width: 1450px;}
 
 
 .flex{display: flex;}

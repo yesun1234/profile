@@ -73,4 +73,15 @@ path{
 .dot2{margin-top: 3px;display: inline-block;}
 .carrerTxt_depth.carrerTxt_depth2{gap: 7px;}
 
+/*** profile ***/
+.profile.flex{align-items: center;gap: 0;}
+.profileTxt > ul{display: grid;gap: 30px;}
+.profileTxt .tag{display: flex;gap: 10px;}
+.profileTxt .tag span{font-size: 20px;}
+/* .profile .photo{width: 386px;} */
+.profile .birthday{display: grid;gap: 11px;}
+.profile .birthday p{font-size: 30px;}
+.profile .birthday p span{font-weight: bold;}
+.skillBox{display: flex;flex-wrap: wrap;}
+.skillBox .skillItem{flex: 1;}
 
