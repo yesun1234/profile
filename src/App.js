@@ -4,6 +4,7 @@ import './assets/common.css'
 import Nav from './components/Nav';
 import Section01 from './components/Section01';
 import Section02 from './components/Section02';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Nav />
         <Element name="aboutMe">
           <Section02 />
+        </Element>
+        <Element name='project'>
+          <Project />
         </Element>
       </div>
     </div>

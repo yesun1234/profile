@@ -15,11 +15,7 @@ const SubNav = () => {
                     CAREER
                 </ScrollLink>
             </li>
-            <li>
-                <ScrollLink to='EDUCATION' smooth={true} duration={500} className='color2' activeClass='on' spy={true}>
-                    EDUCATION
-                </ScrollLink>
-            </li>
+            
         </ul>
         
     </nav>

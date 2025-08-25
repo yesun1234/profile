@@ -48,10 +48,15 @@ path{
 
 .top_logo{position: relative;}
 
-.sec02 .subNav{position: sticky;top: 0;left: 0;height: 100%;}
+.sec02 .subNav{position: sticky;top: 3rem;left: 0;height: 100%;}
 .subNav a{font-size: 45px;font-weight: 700;display: inline-block;padding: 10px 0;}
-.subNav a.on{color: pink;}
-.subMain{padding: 10px;}
+.subNav a.on{position: relative;transition: all .3s;}
+.subNav a::before {
+  content: "";position: absolute;bottom: 0;left: 0;height: 3px;width: 100%;background: #fff;
+  transform: scaleX(0);transform-origin: left;transition: transform 0.3s ease-in-out;}
+
+.subNav a.on::before {transform: scaleX(1);}
+.subMain{padding: 10px;width: 100%;display: grid;gap: 100px;}
 
 
 /*** sec02 ***/
@@ -76,12 +81,36 @@ path{
 /*** profile ***/
 .profile.flex{align-items: center;gap: 0;}
 .profileTxt > ul{display: grid;gap: 30px;}
-.profileTxt .tag{display: flex;gap: 10px;}
+.profileTxt .tag{display: flex;gap: 10px;flex-wrap: wrap;}
 .profileTxt .tag span{font-size: 20px;}
-/* .profile .photo{width: 386px;} */
-.profile .birthday{display: grid;gap: 11px;}
-.profile .birthday p{font-size: 30px;}
-.profile .birthday p span{font-weight: bold;}
-.skillBox{display: flex;flex-wrap: wrap;}
-.skillBox .skillItem{flex: 1;}
+.profile .photo{width: 386px;}
+.profile .birthday{display: grid;gap: 13px;}
+.profile .birthday p{font-size: 25px;}
+.skillBox{display: flex;flex-wrap: wrap;align-items: center;gap: 6px;}
+.skillBox .skillItem img{object-fit: scale-down;width: 33px;}
+.skillBox .skillItem .skillName{display: none;}
+.txtBox{background: #ffffff33;border-radius: 20px;padding: 25px;font-size: 31px;line-height: 1.2;}
+.txtBox p{word-break: keep-all;text-align: justify;letter-spacing: -1px;word-spacing: -1px;}
+.txtImg{display: none;}
+
+
+/*** project ***/
+.project .inner{margin: 250px auto;}
+.project h2{font-size: 40px;}
+.projectList{width: 100%;margin-top: 85px;}
+.projectBox_inner{border-radius: 20px;overflow: hidden;}
+.projectList > li{width: 50%;float: left;position: relative;overflow: hidden;padding: 10px;}
+.projectList li .projectBox{width: 100%;}
+.projectList li .projectBox img{filter: brightness(0.5);height: 100%;}
+.projectTxts{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: #000;transition: all .3s;width: 92%;}
+.projectTxts p{color: rgb(var(--color-primary2));font-size: 30px;}
+.projectList .boxConatain{display: inline-block;transition: all .7s;}
+.projectList .boxConatain:hover .projectTxts{height: auto;transform: translate(-50%, -50%);}
+.projectList .boxConatain:hover .depthTxt{height: 200px;opacity: 1;}
+.depthTxt{margin-top: 10px;height: 0;transition: all .7s;overflow: hidden;opacity: 0;flex-direction: column;gap: 15px;position: relative;}
+.depthTxt span{display: block;margin-top: 3px;font-size: 23px;}
+.depthTxt li{font-size: 20px;}
+.projectList li:hover .projectBox img{filter: brightness(0.3);}
+.linkImg{width: 35px;color: #fff;position: absolute;bottom: 0;right: 0;}
+
 

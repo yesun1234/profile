@@ -13,13 +13,13 @@ const Nav = () => {
                 </ScrollLink>
             </li>
             <li>
-                <ScrollLink to='aboutMe' smooth={true} duration={500}>
+                <ScrollLink to='profile' smooth={true} duration={500}>
                     ABOUT ME
                 </ScrollLink>
             </li>
             <li>
-                <ScrollLink to='ABOUT' smooth={true} duration={500}>
-                    프로젝트
+                <ScrollLink to='project' smooth={true} duration={500}>
+                    PROJECT
                 </ScrollLink>
             </li>
          
