@@ -6,7 +6,7 @@ const Career = () => {
       <ul className='careerList'>
         <li>
             <time className='careerDate'>2024.06 - 2025.6</time>    
-            <span className='careerTxt color3'>
+            <span className='careerTxt'>
                 모노브레인
             </span>
             <ul className='carrerTxt_depth'>
@@ -38,7 +38,7 @@ const Career = () => {
          </li>
          <li>
             <time className='careerDate'>2023.12 - 2024.06</time>    
-            <span className='careerTxt color3'>
+            <span className='careerTxt'>
                 국비과정 수료
             </span>
             <ul className='carrerTxt_depth carrerTxt_depth2'>
@@ -51,7 +51,7 @@ const Career = () => {
          </li>
          <li>
             <time className='careerDate'>2018</time>    
-            <span className='careerTxt color3'>
+            <span className='careerTxt'>
                 고등학교 졸업
             </span>
             <span className='dot dot2'>인문계열 이과</span>

@@ -8,7 +8,7 @@ import linkImg from '../assets/images/link2.png'
 const Project = () => {
   return (
     <section className='project'>
-        <div className='inner inner2'>
+        <div className='inner inner2 flex'>
             <h2 className='center'>Project</h2>
             <ul className='projectList'>
             <li>
