@@ -9,7 +9,7 @@ const Bottom = () => {
   const linesRef = useRef([]); 
   linesRef.current = []; 
 
-  const text = "THANK YOU FOR WATCHING! 봐주셔서 감사합니다! ";
+  const text = "<span>THANK YOU FOR WATCHING!</span> 봐주셔서 감사합니다! ";
   const lineCount = 6; 
 
   const addToRefs = (el) => {
@@ -35,7 +35,7 @@ const Bottom = () => {
           },
         });
       } else {
-        gsap.set(line, { x: `-${lineWidth / 1}px` });
+        gsap.set(line, { x: `-${lineWidth / 2}px` });
 
         gsap.to(line, {
           x: `+=${lineWidth}px`,
@@ -58,8 +58,8 @@ const Bottom = () => {
           key={i}
           ref={addToRefs}
           style={{ whiteSpace: "nowrap", margin: 0 }}
+          dangerouslySetInnerHTML={{ __html: text + text }}
         >
-          {text}{text}
         </p>
       ))}
     </div>

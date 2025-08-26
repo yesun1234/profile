@@ -1,6 +1,6 @@
 import React from 'react'
 
-import photo from '../assets/images/jieun_im1-142b897b.webp'
+import me from '../assets/images/me.png'
 import skill01 from '../assets/images/icon_html.svg'
 import skill02 from '../assets/images/icon_css.svg'
 import skill03 from '../assets/images/icon_javascript.svg'
@@ -29,7 +29,7 @@ const Profile = () => {
       <div className='flex al-fs'>
         <div className='flex al-c'>
         <div className='photo'>
-          <img src={photo} alt="" />
+          <img src={me} alt="" />
         </div>
         <div className='profileTxt'>
           <ul>

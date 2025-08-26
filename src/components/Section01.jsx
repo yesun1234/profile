@@ -9,6 +9,13 @@ const Section01 = () => {
 
   const circleRefs = [circleRef1, circleRef2, circleRef3];
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/portfolio.pdf"; // public 폴더 안에 있는 PDF 경로
+    link.download = "안예선 자소개서.pdf"; // 저장될 파일명
+    link.click();
+  };
+
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -121,7 +128,7 @@ const Section01 = () => {
                 안녕하세요.<br />웹 퍼블리셔 <span className="color1">안예선</span>입니다.
               </h1>
               <p>웹표준, 웹접근성을 고려하며 안전하고 수준 높은 사이트를 만들며,<br /> 꾸준한 공부로 발전할 것입니다. </p>
-              <button type="button">이력서 다운받기</button>
+              <button onClick={handleDownload}>이력서 다운받기</button>
             </div>
           </div>
         </div>

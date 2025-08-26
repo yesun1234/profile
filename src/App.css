@@ -140,3 +140,4 @@ path{
     display: grid;gap: 9px;
 }
 .finish p + p{margin-top: 30px;}
+.finish p span{color: var(--background-color);text-shadow: none;}
